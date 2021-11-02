@@ -31,15 +31,24 @@ const subtract = (numA, numB) => {
 
 const multiply = (numA, numB) => {
   // * to get a product then return it
+  const total = numA * numB
+  // console.log("multiply")
+  return total
   // Open up the inspector tool in Chrome and select the Console tab to see what this functions is "logging out" to the console.
-  console.log(numA, numB)
+  
+}
+const divide = (numA, numB) => {
+  const value = numA / numB
+  // console.log("multiply")
+  return value
 }
 
-const divide = null
-// / to get a quotient,
-
-const modulus = null
 // and % to get a remainder.
+const modulus = (numA, numB) =>{
+  const value = numA % numB
+  // console.log("modulus")
+  return value
+}
 
 // This function changes the "operation" variable to be equal to the "id" of the button we choose on the web page.
 const changeOperation = (chosenOperation) => {
