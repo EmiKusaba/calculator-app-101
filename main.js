@@ -75,9 +75,9 @@ const equals = () => {
     break;
     case "multiplication": putResultInElement(total(firstNum, secondNum))
     break;
-    case "division": putResultInElemen(divide(firstNum, secondNum)) 
+    case "division": putResultInElemen(value(firstNum, secondNum)) 
     break;
-    case "modulus": putResultInElemen(modulus(firstNum, secondNum)) 
+    case "modulus": putResultInElemen(value(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
