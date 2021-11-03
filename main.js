@@ -55,6 +55,7 @@ const changeOperation = (chosenOperation) => {
   operation = chosenOperation
   // Use your Chrome Inspector Tool > Console Tab to see the "operation" that's logged
   console.log(operation)
+  return operation
 }
 
 // In order to show the user their results we have to access the DOM and stick in the value
@@ -73,11 +74,11 @@ const equals = () => {
     break;
     case "subtraction": putResultInElement(subtract(firstNum, secondNum)) 
     break;
-    case "multiplication": putResultInElement(total(firstNum, secondNum))
+    case "multiplication": putResultInElement(multiply(firstNum, secondNum))
     break;
-    case "division": putResultInElemen(value(firstNum, secondNum)) 
+    case "division": putResultInElement(divide(firstNum, secondNum)) 
     break;
-    case "modulus": putResultInElemen(value(firstNum, secondNum)) 
+    case "modulus": putResultInElement(modulus(firstNum, secondNum)) 
     break;
     default: "Choose an operation"
   }
